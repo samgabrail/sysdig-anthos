@@ -38,7 +38,7 @@ node {
     stage('Deploy App') {
         sh '''
             # deploy the app
-            gcloud container clusters get-credentials sysdig-cicd-cluster --zone us-east1-c --project vibrant-tree-219615
+            gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project vibrant-tree-219615
             kubectl set image deployment/sysdig-jenkins sysdig-jenkins=samgabrail/sysdig-jenkins:${GITID}          
         '''
     }
