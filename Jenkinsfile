@@ -26,7 +26,7 @@ node {
 
     }
     stage('Scanning Image') {
-        anchore 'sysdig_secure_images'
+        sysdigSecure 'sysdig_secure_images'
     }
     stage('Push Successfully Scanned Image to Prod') {
         sh '''
