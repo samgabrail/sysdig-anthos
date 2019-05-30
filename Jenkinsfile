@@ -7,6 +7,7 @@ node {
     stage('Build Image') {
         sh '''
             # find the short git SHA
+            whoami
             echo ${BUILD_NUMBER}
             echo ${GITID}
             #GITID=$(echo ${GIT_COMMIT} | cut -c1-7)
