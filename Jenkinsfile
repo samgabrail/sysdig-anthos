@@ -8,13 +8,13 @@ node {
         sh '''
             # find the short git SHA
             whoami
-            docker version
+            sudo docker version
             echo ${BUILD_NUMBER}
             echo ${GITID}
             #GITID=$(echo ${GIT_COMMIT} | cut -c1-7)
             #echo ${GITID}
             # build the demo using the existing Dockerfile and tag the image with the short git SHA
-            docker build -t gcr.io/vibrant-tree-219615/sysdig-anthos-dev:${GITID} .            
+            sudo docker build -t gcr.io/vibrant-tree-219615/sysdig-anthos-dev:${GITID} .            
         '''
     }
     stage('Push Image to Dev') {
