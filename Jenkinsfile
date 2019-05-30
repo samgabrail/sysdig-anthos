@@ -8,6 +8,7 @@ node {
         sh '''
             # find the short git SHA
             whoami
+            docker version
             echo ${BUILD_NUMBER}
             echo ${GITID}
             #GITID=$(echo ${GIT_COMMIT} | cut -c1-7)
