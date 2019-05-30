@@ -18,7 +18,7 @@ node {
         '''
     }
     stage('Push Image to Dev') {
-        withCredentials([usernamePassword(credentialsId: 'docker-repository-credentials', passwordVariable: 'dockerhubPassword', usernameVariable: 'dockerhubUsername')]) {
+        #withCredentials([usernamePassword(credentialsId: 'docker-repository-credentials', passwordVariable: 'dockerhubPassword', usernameVariable: 'dockerhubUsername')]) {
             sh '''
                 docker push gcr.io/vibrant-tree-219615/sysdig-anthos-dev:${GITID}
                 # add image to sysdig_secure_images file
