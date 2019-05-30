@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: sysdig-anthos
-        image: gcr.io/vibrant-tree-219615/sysdig-anthos-prod:00a30ca
+        image: gcr.io/vibrant-tree-219615/sysdig-anthos-prod:d6924a1
         ports:
         - containerPort: 8001
