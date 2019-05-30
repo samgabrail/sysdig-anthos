@@ -1,4 +1,4 @@
-# sysdig-jenkins
+# Sysdig Demo on Anthos
 Demo of CI/CD workflow with sysdig scanning
 Follow these instructions to install the Sysdig Secure plugin:
 https://wiki.jenkins.io/display/JENKINS/Sysdig+Secure+Jenkins+Plugin
