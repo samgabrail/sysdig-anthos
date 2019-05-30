@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sysdig-anthos
+  labels:
+    name: sysdig-anthos
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: sysdig-anthos
+    spec:
+      containers:
+      - name: sysdig-anthos
+        image: gcr.io/vibrant-tree-219615/sysdig-anthos-prod:00a30ca
+        ports:
+        - containerPort: 8001

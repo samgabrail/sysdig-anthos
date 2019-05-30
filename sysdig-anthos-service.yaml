@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sysdig-anthos
+  labels:
+    name: sysdig-anthos
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8001
+  selector:
+    name: sysdig-anthos
