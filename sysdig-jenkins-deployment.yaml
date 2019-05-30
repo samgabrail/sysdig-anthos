@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sysdig-jenkins
+  labels:
+    name: sysdig-jenkins
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: sysdig-jenkins
+    spec:
+      containers:
+      - name: sysdig-jenkins
+        image: samgabrail/sysdig-jenkins:2f04259
+        ports:
+        - containerPort: 8001
