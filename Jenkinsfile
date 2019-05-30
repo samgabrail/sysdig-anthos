@@ -23,7 +23,7 @@ node {
                 # add image to sysdig_secure_images file
                 echo gcr.io/vibrant-tree-219615/sysdig-anthos-dev:${GITID} > sysdig_secure_images
             '''
-        }
+
     }
     stage('Scanning Image') {
         anchore 'sysdig_secure_images'
