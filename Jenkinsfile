@@ -39,7 +39,7 @@ node {
         sh '''
             # deploy the app
             gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project vibrant-tree-219615
-            kubectl set image deployment/sysdig-jenkins sysdig-jenkins=samgabrail/sysdig-jenkins:${GITID}          
+            kubectl set image deployment/sysdig-anthos sysdig-anthos=gcr.io/vibrant-tree-219615/sysdig-anthos-prod:${GITID} -n sysdig-anthos
         '''
     }
 }
