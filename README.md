@@ -1,6 +1,6 @@
 # Sysdig Demo on Anthos
 
-This will automatically build using jenkins on push to github
+This will automatically build using jenkins on push to github. We needed to disable SSL verification at the Github side because Jenkins is using a self-assigned certificate.
 
 Demo of CI/CD workflow with sysdig scanning
 Follow these instructions to install the Sysdig Secure plugin:
