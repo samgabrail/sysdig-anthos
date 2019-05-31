@@ -1,4 +1,4 @@
-FROM python:2.5-alpine
+FROM python:2.6-alpine
 MAINTAINER Sam Gabrail
 RUN apk update && pip install bottle \
     && mkdir /app
