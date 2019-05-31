@@ -1,6 +1,6 @@
 # Sysdig Demo on Anthos
 
-This will automatically build using jenkins on push to github when testing
+This will automatically build using jenkins on push to github
 
 Demo of CI/CD workflow with sysdig scanning
 Follow these instructions to install the Sysdig Secure plugin:
